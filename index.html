@@ -3,25 +3,144 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Foto-art</title>
+    <title>Foto-art Usługi Fotograficzne Mielec</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab:300,400'>
 </head>
-
 <body>
-<ul class="nav">
-   
-   <div class="logo"><a href=""></a></div>
-    <li><a href="#">Strona główna</a></li>
-    <li><a href="#">O Nas</a></li>
-    <li><a href="#">Usługi</a></li>
-    <li><a href="#">Prace</a></li>
-    <li><a href="#">Kontakt</a></li>
-</ul>
-
-<div class="banner">
-    <img class="banner-image" src="" alt="">
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Usługi</a></li>
+                <li><a href="#">Nasze realizacje</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 class="hero">Foto-art</h1>
+            <h2 class="hero">Usługi fotograficzne</h2>
+            <span class="logotyp">Ty jesteś naszą inspiracją</span>
+        </header>
+        <section>
+            <div class="head">
+               <h1 class="font">
+                   Witamy
+               </h1>
+                <div class="txtnew">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates repellat at, sed minus qui provident. Laudantium distinctio commodi quo odio dolorum, id repellat eius nihil accusantium ratione, magnam, aperiam, in.
+                    </p>
+                </div>
+            </div>
+        </section>
+            <article class="idfoto">
+                <p class="desc">
+                    Zdjęcia do dokumentów
+                </p>
+                <p class="more"><a href="#">Szczegóły</a></p>
+            </article>       
+            <article class="idfoto1">
+                <p class="desc">
+                    Fotografia produktowa
+                </p>
+                <p class="more"><a href="#">Szczegóły</a></p>
+            </article>           
+        <article class="idfoto2">
+                <p class="desc">
+                    Sesje ślubne
+                </p>
+                <p class="more"><a href="#">Szczegóły</a></p>
+            </article>          
+                <article class="idfoto3">
+                <p class="desc">
+                    Inne sesje
+                </p>
+                <p class="more"><a href="#">Szczegóły</a></p>
+            </article>
+        
+        <div class="contact">
+        
+            <p class="ad">Adres: Smoczka 91, Mielec</p>
+            <p class="ad">Email: kontaktfotoart@gmail.com</p>
+            <p class="ad">Telefon: 736-752-621</p>
+            <p class="ad">Czynne: pon.-pt. 8:00 - 18:00 sob. 10:00 - 18:00</p>
+            <p class="ad">Przed wizytą najlepiej zadzwonić i umówić się na spotkanie</p>
+        </div>
+           <div class="container">
+  <h2>Formularz kontaktowy</h2>
+  <pre>Jeśli masz pytanie wypełnij formularz</pre>
 </div>
-
+<form class="contact__form container" method="post" action="mail.php">
+    <!-- Starting of successful form message -->
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                Twoja wiadomość została pomyślnie wysłana.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input name="name" type="text" class="form-control" placeholder="Imię" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="email" type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="phone" type="text" class="form-control" placeholder="Telefon">
+        </div>
+        <div class="col-md-6 form-group">
+            <input name="subject" type="text" class="form-control" placeholder="Temat" required>
+        </div>
+        <div class="col-12 form-group">
+            <textarea name="message" class="form-control" rows="3" placeholder="Wiadomość" required></textarea>
+        </div>
+        <div class="col-12">
+            <input name="submit" type="submit" class="btn btn-success" value="Wyślij Wiadomość">
+        </div>
+    </div>
+</form>
+            </main>
+        <footer>
+        </footer>
+           <script>
+    (function ($) {
+    'use strict';
+    var form = $('.contact__form'),
+        message = $('.contact__msg'),
+        form_data;
+    // Success function
+    function done_func(response) {
+        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+        message.text(response);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+        form.find('input:not([type="submit"]), textarea').val('');
+    }
+    // fail function
+    function fail_func(data) {
+        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.text(data.responseText);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+    }
+    
+    form.submit(function (e) {
+        e.preventDefault();
+        form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: form_data
+        })
+        .done(done_func)
+        .fail(fail_func);
+    });
+    
+})(jQuery);</script>
 </body>
 
-</html>
