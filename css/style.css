@@ -1,3 +1,42 @@
+nav * {
+    display: inline;
+}
+nav {
+    background-color: white;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+}
+nav li {
+    margin: 20px;
+}
+.head {
+    position: relative;
+    text-align: center;
+    font-size: 66px;
+    font-family: courier New, monospace;
+    font-size: 2vw;
+    color: white;
+}
+.font {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vw;
+
+}
+.text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 .idfotox {
     position: relative;
     text-align: center;
@@ -11,6 +50,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(124, 125, 126, 0.23);
+    border: none;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor:default;
 
 }
 
@@ -60,7 +108,7 @@ a.amore:hover {
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor:pointer;
 
 
 }
@@ -97,3 +145,37 @@ a.amore:hover {
     font-size: 4vw;
 }
 
+.desc3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.idfoto3 {
+    position: relative;
+    text-align: center;
+    font-size: 66px;
+    font-family: courier New, monospace;
+    font-size: 4vw;
+}
+.ad {
+    width: 460px;
+    line-height: 1.875em;
+}
+.map{
+    height: 500px;
+    width: 660px;
+    float: left;
+}
+.contact {
+    height: 220px;
+    width: 500px;
+    float: left;
+    
+}
+.container {
+    position: relative;
+    text-align: center;
+}
