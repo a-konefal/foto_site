@@ -79,11 +79,11 @@
             <p class="ad">Czynne: pon.-pt. 8:00 - 18:00 sob. 10:00 - 18:00</p>
             <p class="ad">Przed wizytą najlepiej zadzwonić i umówić się na spotkanie</p>
         </div>
-          </aside>
+          
            <div class="container">
-  <h2>Formularz kontaktowy</h2>
-  <pre>Jeśli masz pytanie wypełnij formularz</pre>
+
 </div>
+
 <form class="contact__form container" method="post" action="mail.php">
     <!-- Starting of successful form message -->
     <div class="row">
@@ -94,26 +94,34 @@
         </div>
     </div>
     <div class="row">
+         <h1>Formularz kontaktowy</h1>
+  <p>Jeśli masz pytanie wypełnij formularz</p>
+       <p> Wymagane pola oznaczone są *</p>
         <div class="col-md-6 form-group">
+           <label for="name">Imię*</label>
             <input name="name" type="text" class="form-control" placeholder="Imię" required>
         </div>
         <div class="col-md-6 form-group">
+           <label for="email">Email*</label>
             <input name="email" type="email" class="form-control" placeholder="Email" required>
         </div>
         <div class="col-md-6 form-group">
+           <label for="phone">Telefon</label>
             <input name="phone" type="text" class="form-control" placeholder="Telefon">
         </div>
         <div class="col-md-6 form-group">
+           <label for="subject">Temat*</label>
             <input name="subject" type="text" class="form-control" placeholder="Temat" required>
         </div>
         <div class="col-12 form-group">
-            <textarea name="message" class="form-control" rows="3" placeholder="Wiadomość" required></textarea>
+            <textarea name="message" class="form-control" rows="20" cols="100" placeholder="Wiadomość" required></textarea>
         </div>
         <div class="col-12">
             <input name="submit" type="submit" class="btn btn-success" value="Wyślij Wiadomość">
         </div>
     </div>
 </form>
+           </aside>
             </main>
         <footer>
         </footer>

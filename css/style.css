@@ -1,17 +1,25 @@
 nav * {
     display: inline;
+    text-align: center;
+}
+nav ul {
+    text-align: center;
 }
 nav {
+    
+  float: none;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
     background-color: white;
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position:absolute;
     height: 80px;
     display: flex;
+    
 }
 nav li {
     margin: 20px;
+ 
 }
 .head {
     position: relative;
@@ -170,12 +178,68 @@ a.amore:hover {
     float: left;
 }
 .contact {
-    height: 220px;
-    width: 500px;
+    height: auto;
+    width: auto;
     float: left;
+    font-size: 20px;
+    
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    border: 0;
     
 }
 .container {
     position: relative;
     text-align: center;
+    height: 500px
+   
+}
+.row {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+    height: auto;
+    width: auto;
+
+}
+input[type=text], select {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 200px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+textarea  {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
