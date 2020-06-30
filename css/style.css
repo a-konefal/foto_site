@@ -1,34 +1,55 @@
+#logo {}
+
+.hero {
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 4vw;
+    display: block;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
 nav * {
     display: inline;
     text-align: center;
+    font-size: 1.5vw;
 }
+
 nav ul {
+
     text-align: center;
+    display: inline;
 }
+
 nav {
-    
-  float: none;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
     background-color: white;
-    position:absolute;
+    position: relative;
     height: 80px;
-    display: flex;
-    
+    display: inline;
+
+
 }
+
 nav li {
     margin: 20px;
- 
+
+
 }
+
 .head {
     position: relative;
     text-align: center;
     font-size: 66px;
-    font-family: courier New, monospace;
+    font-family: courier New, sans-serif;
     font-size: 2vw;
     color: white;
 }
+
 .font {
     position: absolute;
     top: 5%;
@@ -37,6 +58,7 @@ nav li {
     font-size: 3.5vw;
 
 }
+
 .text {
     position: absolute;
     top: 40%;
@@ -49,7 +71,7 @@ nav li {
     position: relative;
     text-align: center;
     font-size: 66px;
-    font-family: courier New, monospace;
+    font-family: courier New, sans-serif;
     font-size: 4vw;
 }
 
@@ -61,12 +83,11 @@ nav li {
     background-color: rgba(124, 125, 126, 0.23);
     border: none;
     color: black;
-    padding: 5px 5px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
-    cursor:default;
+    cursor: default;
 
 }
 
@@ -116,7 +137,7 @@ a.amore:hover {
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
-    cursor:pointer;
+    cursor: pointer;
 
 
 }
@@ -126,6 +147,14 @@ a.amore:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(124, 125, 126, 0.23);
+    border: none;
+    color: black;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default;
 
 }
 
@@ -133,7 +162,7 @@ a.amore:hover {
     position: relative;
     text-align: center;
     font-size: 66px;
-    font-family: courier New, monospace;
+    font-family: courier New, sans-serif;
     font-size: 4vw;
 }
 
@@ -142,6 +171,14 @@ a.amore:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(124, 125, 126, 0.23);
+    border: none;
+    color: black;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default;
 
 }
 
@@ -149,7 +186,7 @@ a.amore:hover {
     position: relative;
     text-align: center;
     font-size: 66px;
-    font-family: courier New, monospace;
+    font-family: courier New, sans-serif;
     font-size: 4vw;
 }
 
@@ -158,6 +195,14 @@ a.amore:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgba(124, 125, 126, 0.23);
+    border: none;
+    color: black;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default;
 
 }
 
@@ -165,81 +210,208 @@ a.amore:hover {
     position: relative;
     text-align: center;
     font-size: 66px;
-    font-family: courier New, monospace;
+    font-family: courier New, sans-serif;
     font-size: 4vw;
 }
+
 .ad {
     width: 460px;
     line-height: 1.875em;
 }
-.map{
+
+.map {
     height: 500px;
     width: 660px;
     float: left;
 }
+
 .contact {
     height: auto;
     width: auto;
     float: left;
     font-size: 20px;
-    
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
     border: 0;
-    
+
 }
+
 .container {
     position: relative;
     text-align: center;
     height: 500px
-   
 }
-.row {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-    height: auto;
+
+#row {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
     width: auto;
+    height: auto;
 
 }
-input[type=text], select {
-  width: 400px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+input[type=text],
+select {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-input[type=email], select {
-  width: 400px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+input[type=email],
+select {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
-  width: 200px;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 200px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
-textarea  {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.foot {
+    position: absolute;
+    width: 100%;
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+    bottom: auto;
+    height: 80px;
+    font-size: 1.5vw;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+#real {
+    text-align: center;
+}
+
+#photos {
+    opacity: .88;
+}
+
+#photos img {
+    width: 30%;
+    float: left;
+    display: block;
+    margin: 2px;
+}
+
+ul {
+    list-style: none;
+    margin: 0px auto;
+    padding: 10px;
+    display: block;
+    max-width: 780px;
+    text-align: center;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay img {
+    margin: 10% auto 0;
+    width: 550px;
+    border-radius: 5px;
+}
+
+#photos {
+    width: 100%;
+}
+
+#photo-gallery {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.photo {
+    /* position: relative;
+    margin: 0px 0px 10px calc((100% - 980px) * 0);
+    top: 50px;
+    left: 700px;
+    grid-area: 1 / 1 / 5 / 2;
+    justify-self: start;
+    align-self: start; */
+    float: right;
+}
+
+.photo-side-left {
+    width: 50%;
+    float: left;
+    align-content: center;
+}
+
+.description-side-right {
+    width: 50%;
+    float: right;
+}
+
+.tekst {
+    margin-left: 50px;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    width: 600px;
+    word-break: keep-all;
 }

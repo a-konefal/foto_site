@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foto-art | Nasze realizacje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab:300,400'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <img id="logo" src="image/logo.png">
+            <h1 class="hero">Foto-art</h1>
+            <h2 class="hero">Usługi fotograficzne</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="zdjecia-do-dokumentow.html">Zdjęcia do dokumentów</a></li>
+                    <li><a href="fotografia-produktowa.html">Fotografia produktowa</a></li>
+                    <li><a href="sesje-slubne.html">Sesje ślubne</a></li>
+                    <li><a href="inne-sesje.html">Inne sesje</a></li>
+                    <li><a href="#">Nasze realizacje</a></li>
+                    <li><a href="#row">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="realizacje">
+            <h1 id="real">Nasze realizacje</h1>
+
+
+
+        </div>
+        <div id="photos">
+            <ul id="photo-gallery">
+                <li>
+                    <a href="https://41.media.tumblr.com/0390d80d6c8cc4a7096033182a4bfe8a/tumblr_ndyvukSjNl1tubinno1_1280.jpg">
+                        <img src="https://41.media.tumblr.com/0390d80d6c8cc4a7096033182a4bfe8a/tumblr_ndyvukSjNl1tubinno1_1280.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://40.media.tumblr.com/bbe414414f4fd1f0b4886c6fcf4193de/tumblr_ndyvd3qoiL1tubinno1_1280.jpg">
+                        <img src="https://40.media.tumblr.com/bbe414414f4fd1f0b4886c6fcf4193de/tumblr_ndyvd3qoiL1tubinno1_1280.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://41.media.tumblr.com/3dde93f097de5e9db4f11b67729d6a2e/tumblr_na06dk1vWM1tubinno1_1280.jpg">
+                        <img src="https://41.media.tumblr.com/3dde93f097de5e9db4f11b67729d6a2e/tumblr_na06dk1vWM1tubinno1_1280.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://40.media.tumblr.com/e67b59d43c79c496b6fa8f1dddabef47/tumblr_nbc7zx6vJl1tubinno1_1280.jpg">
+                        <img src="https://40.media.tumblr.com/e67b59d43c79c496b6fa8f1dddabef47/tumblr_nbc7zx6vJl1tubinno1_1280.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://40.media.tumblr.com/d94d2a63ab509f403111c6e8ebfc22a4/tumblr_ndyfu61hzH1tubinno1_1280.jpg">
+                        <img src="https://40.media.tumblr.com/d94d2a63ab509f403111c6e8ebfc22a4/tumblr_ndyfu61hzH1tubinno1_1280.jpg"></a>
+                </li>
+                <li>
+                    <a href="https://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg">
+                        <img src="https://40.media.tumblr.com/d7a014af6eaec53ccdc7a4171033f96d/tumblr_na06t4fnlI1tubinno1_1280.jpg">
+                    </a>
+                </li>
+                <li>
+                    <img src="image/weedingimage.jpg">
+                </li>
+                <li>
+                    <img src="image/image5.jpg">
+                </li>
+                <li>
+                    <img src="image/sessionimage.jpg">
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="container">
+
+        </div>
+        <form class="contact__form container" method="post" action="mail.php">
+            <!-- Starting of successful form message -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                        Twoja wiadomość została pomyślnie wysłana.
+                    </div>
+                </div>
+            </div>
+            <div id="row">
+                <h1>Formularz kontaktowy</h1>
+                <p>Jeśli masz pytanie wypełnij formularz</p>
+                <p> Wymagane pola oznaczone są *</p>
+                <div class="col-md-6 form-group">
+                    <label for="name">Imię*</label>
+                    <input name="name" type="text" class="form-control" placeholder="Imię" required>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="email">Email*</label>
+                    <input name="email" type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="phone">Telefon</label>
+                    <input name="phone" type="text" class="form-control" placeholder="Telefon">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="subject">Temat*</label>
+                    <input name="subject" type="text" class="form-control" placeholder="Temat" required>
+                </div>
+                <div class="col-12 form-group">
+                    <textarea name="message" class="form-control" rows="20" cols="100" placeholder="Wiadomość" required></textarea>
+                </div>
+                <div class="col-12">
+                    <input name="submit" type="submit" class="btn btn-success" value="Wyślij Wiadomość">
+                </div>
+            </div>
+            <div class="foot">
+                Nasze social media
+                <a href="https://www.facebook.com/zubiilol" target="blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/arturkonefal/" target="blank" class="fa fa-instagram"></a>
+            </div>
+        </form>

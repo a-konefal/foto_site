@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Foto-art | Zdjęcia do dokumentów</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab:300,400" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <img id="logo" src="image/logo.png" />
+            <h1 class="hero">Foto-art</h1>
+            <h2 class="hero">Usługi fotograficzne</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="#">Zdjęcia do dokumentów</a></li>
+                    <li><a href="fotografia-produktowa.html">Fotografia produktowa</a></li>
+                    <li><a href="sesje-slubne.html">Sesje ślubne</a></li>
+                    <li><a href="inne-sesje.html">Inne sesje</a></li>
+                    <li><a href="naszerealizacje.html">Nasze realizacje</a></li>
+                    <li><a href="#row">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="realizacje">
+            <h1 id="real">Zdjęcia do dokumentów</h1>
+        </div>
+        <div id="contain">
+            <div class="photo-side-left">
+                <img class="photo" src="image/image1.jpg" />
+            </div>
+
+            <div id="document" class="description-side-right">
+
+                <p class="tekst">Zdjęcia do dokumentów wykonujemy w naszym fotograficznym punkcie usługowym w Mielcu. Oferujemy również dojazd do klienta na terenie Mielca i okolic. Wykonujemy zdjęcia do każdego dokumentu: zdjęcie do dowodu, zdjęcie do paszportu, zdjęcie do legitymacji, zdjęcie dyplomu, zdjęcie do wizy itp. Wiemy jak ważne jest udane zdjęcie do dowodu, paszportu, prawa jazdy, dyplomu lub legitymacji dlatego decyzję, co do wyboru zdjęcia pozostawiamy klientowi. Do każdego wykonanego zdjęcia proponujemy bezpłatną wersję cyfrową zdjęcia oraz usługę podstawowego retuszu twarzy gratis!!! Zdjęcia są gotowe ekspresowo w 5 do 10 minut!!! Koszt kompletu zdjęć to 25 zł</p>
+            </div>
+        </div>
+
+        <div class="container"></div>
+        <form class="contact__form container" method="post" action="mail.php">
+            <!-- Starting of successful form message -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                        Twoja wiadomość została pomyślnie wysłana.
+                    </div>
+                </div>
+            </div>
+            <div id="row">
+                <h1>Formularz kontaktowy</h1>
+                <p>Jeśli masz pytanie wypełnij formularz</p>
+                <p>Wymagane pola oznaczone są *</p>
+                <div class="col-md-6 form-group">
+                    <label for="name">Imię*</label>
+                    <input name="name" type="text" class="form-control" placeholder="Imię" required />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="email">Email*</label>
+                    <input name="email" type="email" class="form-control" placeholder="Email" required />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="phone">Telefon</label>
+                    <input name="phone" type="text" class="form-control" placeholder="Telefon" />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="subject">Temat*</label>
+                    <input name="subject" type="text" class="form-control" placeholder="Temat" required />
+                </div>
+                <div class="col-12 form-group">
+                    <textarea name="message" class="form-control" rows="20" cols="100" placeholder="Wiadomość" required></textarea>
+                </div>
+                <div class="col-12">
+                    <input name="submit" type="submit" class="btn btn-success" value="Wyślij Wiadomość" />
+                </div>
+            </div>
+            <div class="foot">
+                Nasze social media
+                <a href="https://www.facebook.com/zubiilol" target="blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/arturkonefal/" target="blank" class="fa fa-instagram"></a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Foto-art | Inne sesje</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Slab:300,400" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <img id="logo" src="image/logo.png" />
+            <h1 class="hero">Foto-art</h1>
+            <h2 class="hero">Usługi fotograficzne</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="zdjecia-do-dokumentow.html">Zdjęcia do dokumentów</a></li>
+                    <li><a href="fotografia-produktowa.html">Fotografia produktowa</a></li>
+                    <li><a href="sesje-slubne.html">Sesje ślubne</a></li>
+                    <li><a href="#">Inne sesje</a></li>
+                    <li><a href="naszerealizacje.html">Nasze realizacje</a></li>
+                    <li><a href="#row">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="realizacje">
+            <h1 id="real">Inne sesje</h1>
+        </div>
+        <div id="contain">
+            <div class="photo-side-left">
+                <img class="photo" src="image/sessionimage.jpg" />
+            </div>
+
+            <div id="document" class="description-side-right">
+                <p class="tekst">Naszym mottem jest innowacyjność. Jeśli masz pomysł na niebanalną sesję- pisz śmiało! Oprócz standardowych usług fotograficznych podejmujemy się również sesji, które wykraczają poza schematy. Chcesz podarować bliskiej osobie sesję zdjęciową, ale nie masz pomysłu o jakiej tematyce? Nie ma problemu! Wszystkie szczegóły omówimy później, ponieważ nie boimy się wyzwań!</p>
+            </div>
+        </div>
+
+        <div class="container"></div>
+        <form class="contact__form container" method="post" action="mail.php">
+            <!-- Starting of successful form message -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                        Twoja wiadomość została pomyślnie wysłana.
+                    </div>
+                </div>
+            </div>
+            <div id="row">
+                <h1>Formularz kontaktowy</h1>
+                <p>Jeśli masz pytanie wypełnij formularz</p>
+                <p>Wymagane pola oznaczone są *</p>
+                <div class="col-md-6 form-group">
+                    <label for="name">Imię*</label>
+                    <input name="name" type="text" class="form-control" placeholder="Imię" required />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="email">Email*</label>
+                    <input name="email" type="email" class="form-control" placeholder="Email" required />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="phone">Telefon</label>
+                    <input name="phone" type="text" class="form-control" placeholder="Telefon" />
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="subject">Temat*</label>
+                    <input name="subject" type="text" class="form-control" placeholder="Temat" required />
+                </div>
+                <div class="col-12 form-group">
+                    <textarea name="message" class="form-control" rows="20" cols="100" placeholder="Wiadomość" required></textarea>
+                </div>
+                <div class="col-12">
+                    <input name="submit" type="submit" class="btn btn-success" value="Wyślij Wiadomość" />
+                </div>
+            </div>
+            <div class="foot">
+                Nasze social media
+                <a href="https://www.facebook.com/zubiilol" target="blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/arturkonefal/" target="blank" class="fa fa-instagram"></a>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
